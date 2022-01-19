@@ -7,119 +7,123 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const peopleArray = [
   {
-    name: 'Lee Yat Bun',
+    name: 'Raveen Prabhu',
     title: 'President',
   },
   {
-    name: 'Chen Hsiao Ting',
+    name: 'Dao Minh Hai',
     title: 'Vice President of Student Life',
   },
   {
-    name: 'Yan Yushan',
+    name: 'Arnav Gupta',
     title: 'Vice President of Student Development',
   },
   {
-    name: 'Loy Yoke Yue',
+    name: 'Roy Chua',
     title: 'Vice President of Internal Relations',
   },
   {
-    name: 'Yin Ruoyan',
+    name: 'Abhishek Jain',
     title: 'Vice President of External Relations',
   },
   {
-    name: 'Liu Xiaowen',
+    name: 'Chen Hsiao Ting',
     title: 'General Secretary',
   },
   {
-    name: 'Nicole Joseph',
-    title: 'Assistant General Secretary',
+    name: 'Jenny Jian Jie',
+    title: 'Deputy General Secretary',
   },
   {
-    name: 'Chua Kai Jun',
+    name: 'Tan Kianlin',
     title: 'Finance Secretary',
   },
   {
-    name: 'Ong Yi En',
-    title: 'Assistant Finance Secretary',
+    name: 'Sophie Ng',
+    title: 'Deputy Finance Secretary',
   },
   {
-    name: 'Jeff Sieu Yong',
-    title: 'IT Secretary',
+    name: 'Rishabh Anand',
+    title: 'Tech Lead',
   },
   {
-    name: 'Xiang Qingyi',
-    title: 'Assistant IT Secretary',
+    name: 'Megan Wee',
+    title: 'Deputy Tech Lead',
   },
   {
-    name: 'Raveen Prabhu',
+    name: 'Tricia Goh',
     title: 'Director of FOP',
   },
   {
-    name: 'Lo Zhao Wei',
+    name: 'Summer Thia',
     title: 'Deputy Director of FOP',
   },
   {
-    name: 'Gu Geng',
+    name: 'Andrea Loh',
+    title: 'Deputy Director of FOP',
+  },
+  {
+    name: 'Merrick Neo',
     title: 'Director of Student Relations',
   },
   {
-    name: 'Koh Quan Wei Ivan',
+    name: 'Low Zan Hao',
     title: 'Deputy Director of Student Relations',
   },
   {
-    name: 'Tan Shi Min',
+    name: 'David Limantara',
     title: 'Director of Academic Liaison',
   },
   {
-    name: 'Fang Junwei, Samuel',
+    name: 'Joel Toh',
     title: 'Deputy Director of Academic Liaison',
   },
   {
-    name: 'Kan Yu Xuan',
+    name: 'Cheang Xue Ting',
     title: 'Director of Community Service',
   },
   {
-    name: 'Foo Zi Yi, Patricia',
+    name: 'Wei Yangken',
     title: 'Deputy Director of Community Service',
   },
   {
-    name: 'Ren Weilin',
+    name: 'Xiong Jingya',
     title: 'Director of Welfare',
   },
   {
-    name: 'Fun Wen Yin',
+    name: 'Bryan Ong',
     title: 'Deputy Director of Welfare',
   },
   {
-    name: 'Renee Lee',
+    name: 'L. Kaushik Rangaraj',
     title: 'Director of Sports',
   },
   {
-    name: 'Lim Yu Long',
+    name: 'Denise Lam',
     title: 'Deputy Director of Sports',
   },
   {
-    name: 'Lin Fangyuan',
+    name: 'Xiang Qingyi',
     title: 'Director of Publicity',
   },
   {
-    name: 'Koh Jia Xian',
+    name: 'Alyssa Savier',
     title: 'Deputy Director of Publicity (Graphics & Content)',
   },
   {
-    name: 'Lee Jing Yu, Jonathan',
+    name: 'Yap Teng Chiong',
     title: 'Deputy Director of Publicity (Photo & Video)',
   },
   {
-    name: 'Tean Wei Jun',
+    name: 'Lo Zhao Wei',
     title: 'Director of Marketing',
   },
   {
-    name: 'Oliver Gui Chin Wee',
+    name: 'Lin Jiayong',
     title: 'Deputy Director of Marketing (Sponsorship)',
   },
   {
-    name: 'Malcolm Sng',
+    name: 'Shen Yu Chen',
     title: 'Deputy Director of Marketing (Merchandise)',
   },
 ];
@@ -154,11 +158,11 @@ function PeoplePage() {
   });
 
   const people = Object.assign({}, ...peopleArray.map(person => ({ [person.name.replace(/ /g, '').replace(/,/g, '')]: person })));
-  const president = people.LeeYatBun;
-  const studentLifeHead = people.ChenHsiaoTing;
-  const studentDevelopmentHead = people.YanYushan;
-  const internalRelationsHead = people.LoyYokeYue;
-  const externalRelationsHead = people.YinRuoyan;
+  const president = people.RaveenPrabhu;
+  const studentLifeHead = people.DaoMinhHai;
+  const studentDevelopmentHead = people.ArnavGupta;
+  const internalRelationsHead = people.RoyChua;
+  const externalRelationsHead = people.AbhishekJain;
 
   const presidentialWing = {
     name: 'Presidential Wing',
@@ -177,22 +181,22 @@ function PeoplePage() {
       {
         name: 'Secretariat Cell',
         members: [
-          people.LiuXiaowen,
-          people.NicoleJoseph,
+          people.ChenHsiaoTing,
+          people.JennyJianJie,
         ],
       },
       {
         name: 'Finance Cell',
         members: [
-          people.ChuaKaiJun,
-          people.OngYiEn,
+          people.TanKianlin,
+          people.SophieNg,
         ],
       },
       {
-        name: 'IT Cell',
+        name: 'Tech Leads',
         members: [
-          people.JeffSieuYong,
-          people.XiangQingyi,
+          people.RishabhAnand,
+          people.MeganWee,
         ]
       },
     ]
@@ -200,22 +204,22 @@ function PeoplePage() {
 
   const externalRelationsWing = {
     name: 'External Relations Wing',
-    head: people.YinRuoyan,
+    head: people.AbhishekJain,
     cells: [
       {
         name: 'Publicity Cell',
         members: [
-          people.LinFangyuan,
-          people.KohJiaXian,
-          people.LeeJingYuJonathan,
+          people.XiangQingyi,
+          people.AlyssaSavier,
+          people.YapTengChiong,
         ],
       },
       {
         name: 'Marketing Cell',
         members: [
-          people.TeanWeiJun,
-          people.OliverGuiChinWee,
-          people.MalcolmSng,
+          people.LoZhaoWei,
+          people.LinJiayong,
+          people.ShenYuChen,
         ],
       },
     ]
@@ -223,20 +227,20 @@ function PeoplePage() {
 
   const studentDevelopmentWing = {
     name: 'Student Development Wing',
-    head: people.YanYushan,
+    head: people.ArnavGupta,
     cells: [
       {
         name: 'Academic Liaison Cell',
         members: [
-          people.TanShiMin,
-          people.FangJunweiSamuel,
+          people.DavidLimantara,
+          people.JoelToh,
         ],
       },
       {
         name: 'Community Service Cell',
         members: [
-          people.KanYuXuan,
-          people.FooZiYiPatricia,
+          people.CheangXueTing,
+          people.WeiYangken,
         ],
       },
     ]
@@ -244,20 +248,21 @@ function PeoplePage() {
 
   const studentLifeWing = {
     name: 'Student Life Wing',
-    head: people.ChenHsiaoTing,
+    head: people.DaoMinhHai,
     cells: [
       {
         name: 'FOP Cell',
         members: [
-          people.RaveenPrabhu,
-          people.LoZhaoWei,
+          people.TriciaGoh,
+          people.SummerThia,
+          people.AndreaLoh,
         ],
       },
       {
         name: 'Student Relations Cell',
         members: [
-          people.GuGeng,
-          people.KohQuanWeiIvan,
+          people.MerrickNeo,
+          people.LowZanHao,
         ],
       },
     ]
@@ -265,20 +270,20 @@ function PeoplePage() {
 
   const internalRelationsWing = {
     name: 'Internal Relations Wing',
-    head: people.LoyYokeYue,
+    head: people.RoyChua,
     cells: [
       {
         name: 'Welfare Cell',
         members: [
-          people.RenWeilin,
-          people.FunWenYin,
+          people.XiongJingya,
+          people.BryanOng,
         ],
       },
       {
         name: 'Sports Cell',
         members: [
-          people.ReneeLee,
-          people.LimYuLong,
+          people.LKaushikRangaraj,
+          people.DeniseLam,
         ],
       },
     ]
