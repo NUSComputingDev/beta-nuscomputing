@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `NUS Students' Computing Club`,
     description: `The website for NUS Students' Computing Club`,
-    author: `@jeffsieu`,
+    author: `@rish-16`,
   },
   plugins: [
     `gatsby-plugin-top-layout`,

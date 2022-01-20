@@ -300,7 +300,7 @@ function PeoplePage() {
   wings.forEach((wing) => {
     const keyPrefix = wing.name.replace(/ /g, '');
     wing.image = images[keyPrefix + '1'];
-    wing.imageFun = images[keyPrefix + '1'];
+    wing.imageFun = images[keyPrefix + '2'];
   });
 
   const props = {

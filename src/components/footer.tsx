@@ -23,7 +23,7 @@ const Copyright = () =>
     Copyright © NUS Students' Computing Club ·&nbsp;
     <Link component={GatsbyLink} to="/privacy" style={{color: 'white'}}>Privacy Policy</Link>
     <br/>
-    Page designed by <Link target='_blank' rel="noreferrer" href='https://github.com/jeffsieu' style={{color: 'white', fontWeight: 'bold'}}>Jeff Sieu</Link>
+    Page designed by <Link target='_blank' rel="noreferrer" href='https://github.com/rish-16' style={{color: 'white', fontWeight: 'bold'}}>24th MC Tech Leads</Link>
   </Typography>;
 
 const Footer: React.FC = () => {
@@ -64,24 +64,25 @@ const Footer: React.FC = () => {
         <Grid item sm={12} md={6} xl={4}>
           <Box pl={lg || !lgDown ? 1 : 0} pr={!lgDown ? 1 : 0}>
             <Typography variant='h6'>
-              Our History
+              Have feedback? Send it our way!
             </Typography>
             <Typography variant='body1'>
-              Established when NUS School of Computing gained independence as a separate faculty in 1998, the NUS Students’ Computing Club is the official faculty club and sole union representative of all undergraduates in NUS School of Computing. The club has since been taking care of the student life in NUS School of Computing by organising various events and activities to promote campus vibrancy. We safeguard the interest of our undergraduates, ensure their voices are heard, provide welfare, and form the bridge between our students and the school.
+              <a href="feedback.nuscomputing.com">feedback.nuscomputing.com</a>
             </Typography>
           </Box>
         </Grid>
         <Hidden mdDown xlUp>
           <Grid item md={6}></Grid>
         </Hidden>
-        <Grid item sm={12} md={6} xl={4}>
+        {/* <Grid item sm={12} md={6} xl={4}>
           <Box pl={lg || !lgDown ? 1 : 0}>
             <Box mt={0}>
               <Typography variant='h6'>
                 Vision
               </Typography>
               <Typography variant='body1'>
-                NUS Students’ Computing Club serves to continually support our faculty, to build close-knitted relationships among Computing Club members past and present and drive the charge for campus vibrancy.
+                NUS Students’ Computing Club serves to continually support our faculty, to build close-knitted relationships
+                among Computing Club members past and present and drive the charge for campus vibrancy.
               </Typography>
             </Box>
             <Box mt={4}>
@@ -89,11 +90,12 @@ const Footer: React.FC = () => {
                 Mission
               </Typography>
               <Typography variant='body1'>
-                NUS Students’ Computing Club’s mission is to lead the strive for excellence and to continually advance, for the needs and welfare of our fellow students.
+                NUS Students’ Computing Club’s mission is to lead the strive for excellence and to continually advance,
+                for the needs and welfare of our fellow students.
               </Typography>
             </Box>
           </Box>
-        </Grid>
+        </Grid> */}
         <Grid item xs={12}>
           <Hidden mdUp>
               <Copyright></Copyright>
