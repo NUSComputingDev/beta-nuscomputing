@@ -332,7 +332,7 @@ function PeoplePage() {
       </Box>
       <Grid container spacing={4} alignItems="center" justify="center">
         {
-          props.wingMain.map((wing) =>
+          propsMain.wingMain.map((wing) =>
             <Grid item xs={12} md={6}>
               <a aria-label={`Photo of ${wing.name}`} href={`#${wing.name}`}><GatsbyImage image={wing.image} style={{borderRadius: '8px'}} /></a>
               <Box mt={2}>
