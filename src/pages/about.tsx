@@ -8,9 +8,6 @@ function AboutPage() {
         <Typography variant='h3'>
           About NUS Students' Computing Club
         </Typography>
-        <Typography variant='body1'>
-          The NUS Students’ Computing Club, colloquially referred to as the Computing Club, is a constituent club under the NUS Students’ Union (NUSSU). It comprises and represents all undergraduates pursuing a degree in NUS School of Computing.
-        </Typography>
       </Box>
       <Box mt={4} mb={4}>
         <Typography variant='h4'>History</Typography>
