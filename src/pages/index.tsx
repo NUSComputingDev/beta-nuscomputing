@@ -61,13 +61,11 @@ export default function Index() {
           </Box>
             <Typography color='primary' variant='h4'>Freshmen Orientation Camps</Typography>
             <Box mt={4} mb={4}>
-              <a href='/freshmen'>
-                <StaticImage
-                  alt="FOP banner"
-                  src="../images/fopbanner.jpg"
-                  placeholder="blurred"
-                  className={classes.rounded} />
-              </a>
+              <StaticImage
+                alt="FOP banner"
+                src="../images/fopbanner.jpg"
+                placeholder="blurred"
+                className={classes.rounded} />
             </Box>
             <Box mt={2} mb={4}>
               <Alert severity='warning'>
