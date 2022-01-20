@@ -6,7 +6,7 @@ import WhiteLogo from './white-logo'
 
 const useStyles = makeStyles((theme) => ({
   footer: {
-    background: '#27378f',
+    background: '#6a89cc',
     color: 'white',
   },
   grid: {
