@@ -362,7 +362,7 @@ function PeoplePage() {
         <Divider></Divider>
       </Box>
 
-      {propMain.wingMain.map((wing) =>
+      {propsMain.wingMain.map((wing) =>
         <Box mt={8}>
           <WingContainer {...wing} />
         </Box>
