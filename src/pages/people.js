@@ -361,6 +361,13 @@ function PeoplePage() {
       <Box mt={8} mb={4}>
         <Divider></Divider>
       </Box>
+
+      {propMain.wingMain.map((wing) =>
+        <Box mt={8}>
+          <WingContainer {...wing} />
+        </Box>
+      )}
+
       {props.wings.map((wing) =>
         <Box mt={8}>
           <WingContainer {...wing} />
