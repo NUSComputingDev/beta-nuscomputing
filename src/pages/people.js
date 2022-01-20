@@ -291,10 +291,10 @@ function PeoplePage() {
 
   const wings = [
     presidentialWing,
-    studentDevelopmentWing,
-    internalRelationsWing,
     studentLifeWing,
     externalRelationsWing,
+    studentDevelopmentWing,
+    internalRelationsWing,
   ];
 
   wings.forEach((wing) => {
