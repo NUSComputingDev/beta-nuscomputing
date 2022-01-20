@@ -289,13 +289,22 @@ function PeoplePage() {
     ]
   }
 
-  const wings = [
-    presidentialWing,
-    studentLifeWing,
-    externalRelationsWing,
-    studentDevelopmentWing,
-    internalRelationsWing,
+  const wingMain = [
+    presidentialWing
   ];
+
+  const wings = [
+    externalRelationsWing,
+    studentLifeWing,
+    internalRelationsWing,
+    studentDevelopmentWing,
+  ];
+
+  wingMain.forEach((wing) => {
+    const keyPrefix = wing.name.replace(/ /g, '');
+    wing.image = images[keyPrefix + '1'];
+    wing.imageFun = images[keyPrefix + '2'];
+  });
 
   wings.forEach((wing) => {
     const keyPrefix = wing.name.replace(/ /g, '');
@@ -305,6 +314,10 @@ function PeoplePage() {
 
   const props = {
     wings: wings,
+  };
+
+  const propsMain = {
+    wingMain: wingMain,
   };
 
   return (
@@ -317,6 +330,20 @@ function PeoplePage() {
           24th Management Committee
         </Typography>
       </Box>
+      <Grid container spacing={4} alignItems="center" justify="center">
+        {
+          props.wingMain.map((wing) =>
+            <Grid item xs={12} md={6}>
+              <a aria-label={`Photo of ${wing.name}`} href={`#${wing.name}`}><GatsbyImage image={wing.image} style={{borderRadius: '8px'}} /></a>
+              <Box mt={2}>
+                <Typography variant="subtitle1">
+                  <Link component={GatsbyLink} href={`#${wing.name}`}>{wing.name}</Link>
+                </Typography>
+              </Box>
+            </Grid>
+          )
+        }
+      </Grid>
       <Grid container spacing={4}>
         {
           props.wings.map((wing) =>
