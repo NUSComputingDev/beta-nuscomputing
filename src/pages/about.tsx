@@ -33,8 +33,8 @@ function AboutPage() {
       <Box mt={4} mb={4}>
         <Typography variant='h4'>Mission</Typography>
         <Typography variant='body1'>
-          NUS Students’ Computing Club’s mission is to lead the strive for excellence and to continually advance,
-          for the needs and welfare of our fellow students.
+          NUS Students’ Computing Club’s mission is to be the voice of the students,
+          ensure their holistic well being and bridge the gap between them and the school.
         </Typography>
       </Box>
       <Box mt={4} mb={4}>

@@ -36,44 +36,15 @@ export default function Index() {
           <Box mb={4}>
             <Typography variant='h3' color='textPrimary'>Welcome to NUS Computing!</Typography>
           </Box>
-          <StaticImage
+          {/* <StaticImage
             alt="NUS Computing Banner"
             src="../images/banner.png"
             placeholder="blurred"
             className={classes.rounded}/>
-          {/* <Typography variant='h6'>
-            The <b>23rd Management Committee</b> is looking to recruit subcommittee
-            members to serve the SoC community.
-            <br/>
-            <br/>
-            Plan events under <Link color='secondary' component={ GatsbyLink } to='/recruitment/fop'>
-              FOP
-            </Link>.
-            Support beneficaries as part of <Link color='secondary' component={ GatsbyLink } to='/recruitment/community-service'>
-              Community Service
-            </Link>.
-        
-            Express your creativity and skills in <Link color='secondary' component={ GatsbyLink } to='/recruitment/marketing'>
-              Marketing
-            </Link> or <Link color='secondary' component={ GatsbyLink } to='/recruitment/publicity'>Publicity</Link>.
-        
-            Help your peers under <Link color='secondary' component={ GatsbyLink } to='/recruitment/student-relations'>Student Relations</Link> and <Link color='secondary' component={ GatsbyLink } to='/recruitment/academic-liaison'>
-              Academic Liaison
-            </Link>. Maybe you're a fan of <Link color='secondary' component={ GatsbyLink } to='/recruitment/sports'>Sports</Link>. Or <Link color='secondary' component={ GatsbyLink } to='/recruitment/welfare'>Welfare</Link>?
-        
-            <br/>
-            <br/>
-            No matter who you are, there is <u>bound to be something for you</u>!
-            <br/>
-            <br/>
-            <Button variant='contained' color='secondary' component={ GatsbyLink } to='/recruitment'>
-              Learn more
-            </Button>
-          </Typography> */}
           <Alert severity="warning">
             <AlertTitle><strong>IFG Cancelled</strong></AlertTitle>
             Sadly, IFG recruitment has been halted as IFG has been cancelled.
-          </Alert>
+          </Alert> */}
         </Box>
         <Divider/>
         <Box mt={8}>
@@ -99,18 +70,13 @@ export default function Index() {
               </a>
             </Box>
             <Box mt={2} mb={4}>
-              <Alert severity='success'>
-                <AlertTitle><strong>Updates: FOP sign ups are open!</strong></AlertTitle>
-                Sign up for various events and check out other useful links at <Link href='https://linktr.ee/socfop'>https://linktr.ee/socfop</Link>!
-              </Alert>
               <Alert severity='warning'>
-                <AlertTitle><strong>COVID Restrictions</strong></AlertTitle>
-                In consultation with NUSSU, all face-to-face activities for FOP happening between <u>1 June to 4 July</u> will be suspended.
-                <br/>
-                Further updates will be provided for face-to-face activities for FOP happening between 5 July to 31 July.
+                <AlertTitle><strong>FOP Updates</strong></AlertTitle>
+                We will soon update this site with more information on the Freshman Orientation Programme (FOP)
+                as we receive information on COVID-19 guidelines from NUSSU and higher management. We appreciate your patience!
               </Alert>
             </Box>
-            <Typography variant='h6'>
+            {/* <Typography variant='h6'>
               Incoming freshman, have a look at our&nbsp;
               <Link color='secondary' component={ GatsbyLink } to='/freshmen'>Freshmen Orientation Projects</Link> we have in store for you!
               <br></br>
@@ -119,7 +85,7 @@ export default function Index() {
               Freshman Orientation Programmes! With an exciting lineup of events during the summer, from (hybrid) camps to RAG parformances
               to a social night, you will be sure to get a summer's worth of fun with us! So come <u>join us and make everlasting friendships</u> with
               fellow freshmen and seniors alike this summer!
-            </Typography>
+            </Typography> */}
         </Box>
         <Box mt={4}>
           <Divider></Divider>
@@ -141,13 +107,13 @@ export default function Index() {
                 Check us out at <Link color='secondary' href='https://www.instagram.com/nuscomputingclub/'>@nuscomputingclub</Link>
             </Typography>
           </Box>
-          <iframe
+          {/* <iframe
             title="nuscomputing's instagram"
             src="https://cdn.lightwidget.com/widgets/2dc5ee7fb15559229812e0469d4f070c.html"
             scrolling="no"
             allowTransparency={true}
             className={classes.instagramWidget}>
-          </iframe>
+          </iframe> */}
         </Box>
       </div>
     );
