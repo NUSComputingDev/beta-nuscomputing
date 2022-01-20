@@ -35,7 +35,7 @@ const peopleArray = [
     title: 'Deputy General Secretary',
   },
   {
-    name: 'Tan Kianlin',
+    name: 'Tan Kian Lin',
     title: 'Finance Secretary',
   },
   {
@@ -95,7 +95,7 @@ const peopleArray = [
     title: 'Deputy Director of Welfare',
   },
   {
-    name: 'L. Kaushik Rangaraj',
+    name: 'L Kaushik Rangaraj',
     title: 'Director of Sports',
   },
   {
@@ -186,19 +186,19 @@ function PeoplePage() {
         ],
       },
       {
-        name: 'Finance Cell',
-        members: [
-          people.TanKianlin,
-          people.SophieNg,
-        ],
-      },
-      {
         name: 'Tech Leads',
         members: [
           people.RishabhAnand,
           people.MeganWee,
         ]
       },
+      {
+        name: 'Finance Cell',
+        members: [
+          people.TanKianLin,
+          people.SophieNg,
+        ],
+      }
     ]
   }
 
@@ -314,7 +314,7 @@ function PeoplePage() {
           People
         </Typography>
         <Typography variant="h4">
-          23rd Management Committee
+          24th Management Committee
         </Typography>
       </Box>
       <Grid container spacing={4}>

@@ -107,13 +107,13 @@ export default function Index() {
                 Check us out at <Link color='secondary' href='https://www.instagram.com/nuscomputingclub/'>@nuscomputingclub</Link>
             </Typography>
           </Box>
-          {/* <iframe
+          <iframe
             title="nuscomputing's instagram"
             src="https://cdn.lightwidget.com/widgets/2dc5ee7fb15559229812e0469d4f070c.html"
             scrolling="no"
             allowTransparency={true}
             className={classes.instagramWidget}>
-          </iframe> */}
+          </iframe>
         </Box>
       </div>
     );
