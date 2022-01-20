@@ -291,9 +291,9 @@ function PeoplePage() {
 
   const wings = [
     presidentialWing,
-    studentLifeWing,
     studentDevelopmentWing,
     internalRelationsWing,
+    studentLifeWing,
     externalRelationsWing,
   ];
 
