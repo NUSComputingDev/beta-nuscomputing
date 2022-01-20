@@ -36,15 +36,15 @@ export default function Index() {
           <Box mb={4}>
             <Typography variant='h3' color='textPrimary'>Welcome to NUS Computing!</Typography>
           </Box>
-          {/* <StaticImage
+          <StaticImage
             alt="NUS Computing Banner"
             src="../images/banner.png"
             placeholder="blurred"
             className={classes.rounded}/>
-          <Alert severity="warning">
-            <AlertTitle><strong>IFG Cancelled</strong></AlertTitle>
-            Sadly, IFG recruitment has been halted as IFG has been cancelled.
-          </Alert> */}
+          <Typography variant='h6'>
+            The NUS Students’ Computing Club, colloquially referred to as the Computing Club, is a constituent club under the NUS Students’ Union (NUSSU). 
+            It comprises and represents all undergraduates pursuing a degree in NUS School of Computing.
+          </Typography>
         </Box>
         <Divider/>
         <Box mt={8}>
