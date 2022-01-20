@@ -106,18 +106,14 @@ const navigationLinks: NavigationLink[] = [
     link: '/people',
   },
   {
-    title: 'Services',
-    link: '/services',
-  },
-  {
     title: 'Student Guides',
     link: '/guides',
   },
-  {
-    title: 'FOP',
-    link: '/freshmen',
-    highlight: true,
-  },
+  // {
+  //   title: 'FOP',
+  //   link: '/freshmen',
+  //   highlight: true,
+  // },
   {
     title: 'Photos/Media',
     link: 'https://www.flickr.com/photos/137141057@N04/albums/',

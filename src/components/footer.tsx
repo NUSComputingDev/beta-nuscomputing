@@ -67,7 +67,8 @@ const Footer: React.FC = () => {
               Have feedback? Send it our way!
             </Typography>
             <Typography variant='body1'>
-              <a href="feedback.nuscomputing.com">feedback.nuscomputing.com</a>
+              {/* <a href="feedback.nuscomputing.com">feedback.nuscomputing.com</a> */}
+              feedback.nuscomputing.com
             </Typography>
           </Box>
         </Grid>
